@@ -5,17 +5,17 @@ import HomeScreen from "./components/HomeScreen";
 import NotificationsScreen from "./components/NotificationsScreen";
 import ProfileScreen from "./components/ProfileScreen";
 import linking from "./linking";
-import PushNotificationScreen from "./components/PushNotificationScreen";
+//import PushNotificationScreen from "./components/PushNotificationScreen";
 
 const Stack = createStackNavigator();
 
 function MyStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen
+   <Stack.Navigator>
+      {/*<Stack.Screen
         name="PushNotification"
         component={PushNotificationScreen}
-      />
+      />*/}
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="Notifications" component={NotificationsScreen} />
